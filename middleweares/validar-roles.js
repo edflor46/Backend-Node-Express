@@ -11,7 +11,7 @@ const rolPrivileges = (...roles) => {
 
         if (!req.usuario) {
             return res.status(500).json({
-                msg: 'No se puede verificar el sol de usuario si no hay un token existente'
+                msg: 'No se puede verificar el rol de usuario si no hay un token existente'
             });
         }
 
